@@ -1,4 +1,8 @@
 
+/*
+ * The SList class has two methods toString which prints the SList and SListIterator which 
+ * returns the head node.
+ */
 class SList<E> 
 {
     private Link<E> headLink = new Link<E>(null);
@@ -20,6 +24,11 @@ class SList<E>
     }
 }
 
+/*
+ * The SListIterator class has functions which will insert remove the nodes
+ * This class also has methods such as next() and hasNext() which will get 
+ * get the next node, checks if the current node has next node respectively.
+ */
 class SListIterator<E> 
 {
     Link<E> current;
@@ -50,6 +59,10 @@ class SListIterator<E>
     }
 }
 
+/* 
+ *This Link class acts as a node which has constructor that takes value of the node and also the 
+ *link to next node.
+ */
 class Link<E> 
 {
     E e;
@@ -84,37 +97,37 @@ public class List_Iterator
         
         SListIterator<String> slIter = sl.iterator();
         
-        System.out.println("inserting \"hi\"");
-        slIter.insert("hi");
+        System.out.println("inserting \"hello\"");
+        slIter.insert("hello");
         System.out.println(sl);
         System.out.println("inserting \"there\"");
         slIter.insert("there");
         System.out.println(sl);
-        System.out.println("inserting \"sweetie\"");
-        slIter.insert("sweetie");
+        System.out.println("inserting \"Sahil\"");
+        slIter.insert("Sahil");
         System.out.println(sl);
-        System.out.println("inserting \"pie\"");
-        slIter.insert("pie");
+        System.out.println("inserting \"Butani\"");
+        slIter.insert("Butani");
         System.out.println(sl);
 
         SListIterator<String> slIter2 = sl.iterator();
         
-        System.out.println("removing \"hi\"");
+        System.out.println("removing \"hello\"");
         slIter2.remove();
         System.out.println(sl);
-        System.out.println("inserting \"hello\"");
-        slIter2.insert("hello");
+        System.out.println("inserting \"hi\"");
+        slIter2.insert("hi");
         System.out.println(sl);
         System.out.println("removing \"there\"");
         slIter2.remove();
         System.out.println(sl);
-        System.out.println("removing \"sweetie\"");
+        System.out.println("removing \"Sahil\"");
         slIter2.remove();
         System.out.println(sl);
-        System.out.println("removing \"pie\"");
+        System.out.println("removing \"Butani\"");
         slIter2.remove();
         System.out.println(sl);
-        System.out.println("removing \"hello\"");
+        System.out.println("removing \"hi\"");
         SListIterator slIter3 = sl.iterator();
         slIter3.remove();
         System.out.println(sl);

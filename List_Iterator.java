@@ -133,3 +133,38 @@ public class List_Iterator
         System.out.println(sl);
     }
 }
+
+/*
+OUTPUT:
+SList: []
+inserting "hello"
+SList: [
+hello]
+inserting "there"
+SList: [
+hello, there]
+inserting "Sahil"
+SList: [
+hello, there, Sahil]
+inserting "Butani"
+SList: [
+
+hello, there, Sahil, Butani]
+removing "hello"
+SList: [
+there, Sahil, Butani]
+inserting "hi"
+SList: [
+hi, there, Sahil, Butani]
+removing "there"
+SList: [
+hi, Sahil, Butani]
+removing "Sahil"
+SList: [
+hi, Butani]
+removing "Butani"
+SList: [
+hi]
+removing "hi"
+SList: []
+*/
